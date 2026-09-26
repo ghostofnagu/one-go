@@ -1,0 +1,28 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="body" x1="62" y1="87" x2="194" y2="171" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFAB60"/>
+      <stop offset="0.48" stop-color="#F38DBB"/>
+      <stop offset="1" stop-color="#9B83E8"/>
+    </linearGradient>
+    <linearGradient id="reel" x1="95" y1="112" x2="160" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9D0EE"/>
+      <stop offset="1" stop-color="#C394E9"/>
+    </linearGradient>
+    <filter id="grain" x="-12%" y="-12%" width="124%" height="124%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="2" seed="11" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="mono"/>
+      <feComponentTransfer in="mono" result="texture"><feFuncA type="table" tableValues="0 0.13"/></feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="texture" mode="multiply"/>
+    </filter>
+  </defs>
+  <g filter="url(#grain)">
+    <rect x="62" y="87" width="132" height="82" rx="18" fill="url(#body)"/>
+    <rect x="85" y="105" width="86" height="37" rx="10" fill="#F9C3EB" fill-opacity="0.62"/>
+    <circle cx="106" cy="123.5" r="12" fill="url(#reel)"/>
+    <circle cx="150" cy="123.5" r="12" fill="url(#reel)"/>
+    <circle cx="106" cy="123.5" r="3.5" fill="#A283E4"/>
+    <circle cx="150" cy="123.5" r="3.5" fill="#A283E4"/>
+    <path d="M92 151H164L155 161H101L92 151Z" fill="#AD82DF" fill-opacity="0.64"/>
+  </g>
+</svg>
