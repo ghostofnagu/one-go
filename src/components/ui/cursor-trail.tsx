@@ -4,13 +4,15 @@ import React, { useEffect, useRef } from "react";
 
 import { cn } from "../../lib/utils";
 
+const flairBasePath = `${import.meta.env.BASE_URL}flair/`;
+
 const flairImages = [
-  "/flair/vinyl.svg",
+  `${flairBasePath}vinyl.png`,
   "https://cdn.21st.dev/assets/mirror/7f/7fa03f07d6ecc851e6f9ecfc2fa3d401ee781e1c3ac345d57697b9792a349b32.png",
-  "/flair/cassette.svg",
+  `${flairBasePath}cassette.png`,
   "https://cdn.21st.dev/assets/mirror/eb/eb232a2025c87072e321d8b18a63130ebd6c2cf17360721a13152411548b8064.png",
   "https://cdn.21st.dev/assets/mirror/b8/b8d012bb9179f6ddf83cfb8e9f0d536bda7444a4838c5e691427c5f1a9e78d0e.png",
-  "/flair/note.svg",
+  `${flairBasePath}note.png`,
   "https://cdn.21st.dev/assets/mirror/61/6182e640b5507304132cfa3b61cc62ec45f0b0a85a883ad80a5ff5a397748a5a.png",
   "https://cdn.21st.dev/assets/mirror/b6/b636532c14ec5ec65e1bcb697a4d374f688783477a605ced41bca4606c38b9b0.png",
   "https://cdn.21st.dev/assets/mirror/7f/7f7a80245c0e9bbb97db3b452322f89b7666e27cf41eae1cf235a4c186637d5b.png",
