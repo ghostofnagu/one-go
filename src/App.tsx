@@ -18,8 +18,8 @@ function App() {
 
       <section className="relative flex min-h-[calc(100svh-24px)] items-center justify-center overflow-hidden rounded-[10px] bg-[var(--one-go-background)] px-5 py-24 sm:min-h-[calc(100svh-32px)]">
         <div className="relative z-10 mx-auto w-full max-w-[1200px] text-center">
-          <p className="mb-8 text-xl font-semibold tracking-tight text-black">For the collectors</p>
-          <h1 className="mx-auto max-w-[1160px] text-[clamp(42px,5.2vw,74px)] font-semibold leading-[.96] tracking-[-.035em]">Your whole Bandcamp.<br />In one go.</h1>
+          <p className="mb-8 text-xl font-semibold tracking-tight text-black">For The Collectors</p>
+          <h1 className="mx-auto max-w-[1160px] text-[clamp(42px,5.2vw,74px)] font-semibold leading-[.96] tracking-[-.035em]">Your Whole Bandcamp.<br />In One Go.</h1>
           <p className="mx-auto mt-6 max-w-[1100px] text-xl font-semibold leading-[1.35] tracking-tight text-black sm:whitespace-nowrap">Every release you bought. One download. The format you want. Kept local.</p>
 
           <form
