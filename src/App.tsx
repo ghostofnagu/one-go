@@ -16,6 +16,21 @@ function App() {
     <main className="min-h-screen bg-[var(--one-go-background)] p-3 text-[var(--one-go-foreground)] sm:p-4">
       <CursorTrail />
 
+      <nav className="absolute left-7 right-7 top-7 z-20 flex items-center justify-between sm:left-9 sm:right-9 sm:top-9" aria-label="Primary navigation">
+        <a
+          className="rounded-full border border-black/12 bg-white/72 px-3.5 py-2 text-[12px] font-semibold tracking-tight backdrop-blur-md transition-colors hover:border-black/28"
+          href={import.meta.env.BASE_URL}
+        >
+          In One Go
+        </a>
+        <a
+          className="rounded-full bg-black px-4 py-2 text-[12px] font-semibold tracking-tight text-white transition-transform duration-200 hover:scale-[1.03]"
+          href="#waitlist"
+        >
+          Join The Waitlist
+        </a>
+      </nav>
+
       <section className="relative flex min-h-[calc(100svh-24px)] items-center justify-center overflow-hidden rounded-[10px] bg-[var(--one-go-background)] px-5 py-24 sm:min-h-[calc(100svh-32px)]">
         <div className="relative z-10 mx-auto w-full max-w-[1200px] text-center">
           <p className="mb-8 text-xl font-semibold tracking-tight text-black">For The Collectors</p>
@@ -23,6 +38,7 @@ function App() {
           <p className="mx-auto mt-6 max-w-[1100px] text-xl font-semibold leading-[1.35] tracking-tight text-black sm:whitespace-nowrap">Every release you bought. One download. The format you want. Kept local.</p>
 
           <form
+            id="waitlist"
             className="mx-auto mt-8 w-full max-w-[430px]"
             onSubmit={handleSubmit}
             onFocus={() => setIsFormActive(true)}
